@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .text {
+        position: absolute;
+        text-align: center;
+        left: 50%; /* Move to the horizontal center */
+        top: 50%; /* Move to the vertical center */
+        transform: translate(-50%, -50%);
+        opacity: 0; /* Initially hide the text */
+        animation: fadeIn 2s ease forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .happy {
+        color: #ff9933;
+        font-family: serif;
+        font-size: 20px;
+      }
+
+      .ind {
+        color: whitesmoke;
+        font-family: serif;
+        font-size: 20px;
+      }
+
+      .day {
+        color: green;
+        font-family: serif;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag">
+      <div class="orange"></div>
+      <div class="white">
+        <div class="circle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+      <div class="green"></div>
+    </div>
+
+    <div class="flagwave"></div>
+
+    <div class="text">
+      <div>
+        <p class="happy"><b>HAPPY</b></p>
+      </div>
+
+      <div>
+        <p class="ind"><b>INDEPENDENCE</b></p>
+      </div>
+
+      <div>
+        <p class="day"><b>DAY</b></p>
+      </div>
+      <p class="day day2"><b>Piyush Tripathi</b></p>
+    </div>
+  </body>
+</html>
